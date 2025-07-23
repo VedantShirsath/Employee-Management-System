@@ -1,0 +1,160 @@
+:root{
+    --main:#00ADB5;
+    --text:#393E46;
+    --bg:#222831;
+    --op:#EEEEEE;
+}
+
+
+#logbtn{
+    color: var(--op);
+    font-size: 1rem;
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    padding: .3rem 1.3rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    background-color: var(--main);
+    font-weight: bold;
+}
+
+#logbtn:hover{
+    color: var(--main);
+    background-color: transparent;
+}
+
+.form-custom-login .form-heading{
+    background: var(--main);
+    border-radius: 5px;
+}
+
+
+.btn-menu{
+    color: var(--op);
+    font-size: 1rem;
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    padding: .3rem 1rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    background-color: var(--main);
+    font-weight: bold;
+}
+
+.btn-menu:hover{
+    color: var(--main);
+    border: 2px solid var(--main);
+    background-color: transparent;
+}
+
+.well-custom{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 3px solid var(--main);
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10 10 10 / 75%);
+    padding: 0 2.5rem;
+}
+h3{
+    color:var(--op);
+}
+
+.table-custom{
+background: var(--main);
+}
+
+.table-custom > tbody > tr > td{
+    color: var(--bg);
+}
+
+.glyphicon-edit,.glyphicon-folder-open,.glyphicon-trash{
+color: var(--bg);
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+    border-top: var(--bg);
+}
+
+
+
+.table-custom > thead > tr > th{
+    color: var(--op);
+}
+
+.table-responsive{
+    padding-top: 10px;
+}
+
+.glyphicon-ok,.glyphicon-remove,.glyphicon-refresh{
+    border: 2px solid var(--bg);
+    background: var(--bg);
+    border-radius: 80px;
+}
+
+.btn-danger{
+background: var(--bg);
+border: 2px solid var(--bg);
+border-radius: 5px;
+}
+
+.nav-tabs-custom > li.active > a{
+    background: var(--main);
+    color: var(--op);
+}
+.nav-tabs-custom > li.active > a:hover{
+    background: var(--main);
+    color: var(--op);
+}
+
+.nav-tabs > li > a{
+    color: var(--op);
+}
+.nav-tabs > li > a:hover{
+    background: transparent;
+    color: var(--main);
+    border-top: var(--bg);
+    border-left: var(--bg);
+    border-right: var(--bg);
+}
+
+.btn-primary{
+    color: var(--op);
+    font-size: 1rem;
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    padding: .3rem 1rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    background-color: var(--main);
+    font-weight: bold;
+    margin-top: 15px; 
+}
+
+.btn-primary:hover{
+    color: var(--main);
+    border: 2px solid var(--main);
+    background-color: transparent;
+}
+.btn-success{
+    margin-top: 15px;
+}
+
+.btn-success-custom,.btn-danger-custom{
+    border-radius: 5px;
+}
+
+.close{
+    color: var(--bg) !important;
+}
+
+.navbar-inverse{
+    background-color: transparent;
+}
+
+
+
+.navbar-header{
+    border-bottom: 2px solid var(--main);
+}
+
+

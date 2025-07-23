@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    transition: .5 linear;
+}
+:root{
+    --main:#00ADB5;
+    --text:#393E46;
+    --bg:#222831;
+    --op:#EEEEEE;
+}
+.contanier{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contanier::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    left: 0;
+    background-color: var(--main);
+}
+.contanier .hero{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 85vw;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 3px solid var(--main);
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10 10 10 / 75%);
+    padding: 0 2.5rem;
+}
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.4rem;
+    width: 100%;
+}
+.hero nav .logo{
+    color: var(--text);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.hero nav .nav-links a {
+    color: var(--op);
+    font-size: 1.3rem;
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    padding: .3rem 1.3rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    background-color: var(--main);
+    font-weight: bold;
+}
+.nav-links{
+    margin-top: 1.3rem;
+   
+    
+}
+.hero nav .nav-links a:hover{
+    color: var(--main);
+    background-color: transparent;
+}
+.hero .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2.5rem;
+}
+.hero .content .div-text{
+    width: 40%;
+}
+.hero .content .div-text h1{
+    margin-bottom: 1.3rem;
+    font-size: 3.1rem;
+    color: #fff;
+}
+.hero .content .div-text h4{
+    color: var(--text);
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+.hero .content .div-text p{
+    color: #4f4f4f;
+    margin-bottom: 3.1rem;
+    font-size: 1.1rem;
+}
+.hero .content .div-text .btn{
+    padding: .3rem 1.3rem;
+    background-color: var(--text);
+    border: 2px solid var(--text);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+}
+.hero .content .div-text .btn:hover{
+    color: var(--text);
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.soc-link{
+    position: absolute;
+    top: 95%;
+    right: .6rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    padding: 2.5rem;
+}
+.soc-link a i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--main);
+    margin-bottom: 1.3rem;
+    transition: 0.4s;
+    padding: 1rem;
+}
+.soc-link a i:hover{
+    color: var(--op);
+}
+
+.hero .content .div-img{
+    width: 40%;
+    
+}
+.hero .content .div-img img{
+    width: 80%;
+    margin-left: 7.5rem;
+    
+}
+/* animation */
+
+.hero .logo,
+.hero .content .div-text h1,
+.hero .content .div-text h4,
+.hero .content .div-text .btn{
+    position: relative;
+    top: 3.1rem;
+    animation: slide-top .5s linear forwards;
+    opacity: 0;
+}
+.hero .logo{
+    animation-delay: 0.2s;
+}
+.hero .content .div-text h1{
+    animation-delay: 0.5s;
+}
+.hero .content .div-text h4{
+    animation-delay: 0.9s;
+}
+.hero .content .div-text .btn{
+    animation-delay: 1.8s;
+}
+@keyframes slide-top{
+    0%{
+        top: 3.1rem;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.hero .content .div-text p{
+    position: relative;
+    left: 6.3rem;
+    animation: slide-right .5s linear forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+}
+@keyframes slide-right{
+    0%{
+        left: 6.3rem;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.hero .content .div-img img{
+ animation: spin 5s linear infinite;
+}
+
+@keyframes spin{
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+      
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+
+
+
+@media (max-width:1090px){
+
+    html{
+        font-size: 90%;
+    }
+}
+@media (max-width:990px){
+
+    html{
+        font-size: 80%;
+    }
+}
+@media (max-width:750px){
+
+    html{
+        font-size: 70%;
+    }
+}
+@media (max-width:540px){
+
+    html{
+        font-size: 60%;
+    }
+}
+@media (max-width:460px){
+
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:360px){
+
+    html{
+        font-size: 50%;
+    }
+    .div-img{
+        display: none;
+    }
+}
+
